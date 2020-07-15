@@ -1,167 +1,166 @@
-            @import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
-        body {
-            background-image: url(https://digilove.pl/wp-content/uploads/2019/04/szare-deski-tlo-do-robienia-zdjec-paznokci.jpg);
-            background-size: 100% 100%;
-            font-family: 'Amatic SC';
-            font-weight: 800;
-            height: 100%;
-        }
-        
-        #header {
-            position: fixed;
-            align-items: center;
-            width: 98%;
-            height: 80px;
-            background-color: darkgrey;
-            border: 5px solid darkgrey;
-            border-radius: 12px;
-            font-size: 23px;
-            z-index: 1;
-        }
-        
-        #header-img {
-            width: 100px;
-            height: 80px;
-            border-radius: 12%;
-        }
-        
-        .logo {
-            position: absolute;
-            display: inline-flex;
-            margin: 50px 0 20px 0;
-            font-size: 23px;
-        }
-        
-        #nav-bar {
-            float: right;
-            font-size: 23px;
-        }
-        
-        .one {
-            display: inline;
-            float: left;
-        }
-        
-        .nav-link {
-            display: block;
-            padding: 8px;
-        }
-        
-        .first {
-            float: right;
-        }
-        
-        a {
-            text-decoration: none;
-            color: darkblue;
-        }
-        
-        @media (min-width: 300px) {
-            #vid {
-                display: block;
-                padding: 50px;
-                position: relative;
-                width: 90%;
-                height: 360px;
-                font-size: 23px;
-            }
-            #video {
-                border: 15px solid darkgrey;
-            }
-            #newsletter {
-                display: block;
-                position: relative;
-                top: 150px;
-                padding: 60px;
-                font-size: 23px;
-                border: 2px dashed black;
-                width: 60%;
-                background-color: rgba(002, 086, 105, 0.5);
-            }
-            #email {
-                padding: 10px;
-                width: 50%;
-                border: 1px dashed black;
-                border-radius: 9px;
-                background-color: blanchedalmond;
-            }
-            #submit {
-                padding: 10px;
-                width: 20%;
-                border: 1px dashed black;
-                border-radius: 9px;
-                background-color: blanchedalmond;
-            }
-            .tip {
-                font-size: 15px;
-            }
-            #genres {
-                position: relative;
-                display: block;
-                top: 200px;
-                padding: 60px;
-                width: 90%;
-                height: 400px;
-                font-size: 23px;
-            }
-            #shop {
-                padding: 100px;
-            }
-            #visit {
-                height: 50px;
-                font-size: 25px;
-                width: 30%;
-                display: block;
-                float: left;
-            }
-            #img.b {
-                position: relative;
-                display: block;
-                padding: 10px;
-                float: left;
-            }
-            #link {
-                top: 56px;
-                right: 18px;
-                display: block;
-                float: left;
-                position: relative;
-                font-size: 25px;
-                margin: 0 auto;
-            }
-            #sec {
-                position: relative;
-                height: 120px;
-            }
-            #footer {
-                display: inline-block;
-                position: absolute;
-                width: 96%;
-                vertical-align: middle;
-                text-align: center;
-                padding: 20px;
-                background-color: rgba(002, 086, 105, 0.7);
-                margin: 0 auto;
-                bottom: 0;
-            }
-            #footer-left {
-                width: 33%;
-                display: inline-block;
-                float: left;
-                font-size: 20px;
-                text-align: center;
-            }
-            #footer-center {
-                width: 33%;
-                float: left;
-                display: block;
-                text-align: center;
-                margin-top: 10px;
-            }
-            #footer-right {
-                width: 33%;
-                display: block;
-                float: left;
-                text-align: center;
-                margin-top: 10px;
-            }
+         @import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+     body {
+         background-image: url(https://digilove.pl/wp-content/uploads/2019/04/szare-deski-tlo-do-robienia-zdjec-paznokci.jpg);
+         background-size: 100% 100%;
+         font-family: 'Amatic SC';
+         font-weight: 800;
+         height: 100%;
+     }
+     
+     #header {
+         position: fixed;
+         align-items: center;
+         width: 98%;
+         height: 80px;
+         background-color: darkgrey;
+         border: 5px solid darkgrey;
+         border-radius: 12px;
+         font-size: 23px;
+         z-index: 1;
+     }
+     
+     #header-img {
+         width: 100px;
+         height: 80px;
+         border-radius: 12%;
+     }
+     
+     .logo {
+         position: absolute;
+         display: inline-flex;
+         margin: 50px 0 20px 0;
+         font-size: 23px;
+     }
+     
+     #nav-bar {
+         float: right;
+         font-size: 23px;
+     }
+     
+     .one {
+         display: inline;
+         float: left;
+     }
+     
+     .nav-link {
+         display: block;
+         padding: 8px;
+     }
+     
+     .first {
+         float: right;
+     }
+     
+     a {
+         text-decoration: none;
+         color: darkblue;
+     }
+     
+     @media (min-width: 300px) {
+         #vid {
+             display: block;
+             padding: 50px;
+             position: relative;
+             width: 90%;
+             height: 360px;
+             font-size: 23px;
+         }
+         #video {
+             border: 15px solid darkgrey;
+         }
+         #newsletter {
+             display: block;
+             position: relative;
+             top: 150px;
+             padding: 60px;
+             font-size: 23px;
+             border: 2px dashed black;
+             width: 60%;
+             background-color: rgba(002, 086, 105, 0.5);
+         }
+         #email {
+             padding: 10px;
+             width: 50%;
+             border: 1px dashed black;
+             border-radius: 9px;
+             background-color: blanchedalmond;
+         }
+         #submit {
+             padding: 10px;
+             width: 20%;
+             border: 1px dashed black;
+             border-radius: 9px;
+             background-color: blanchedalmond;
+         }
+         .tip {
+             font-size: 15px;
+         }
+         #genres {
+             position: relative;
+             display: block;
+             top: 200px;
+             padding: 60px;
+             width: 90%;
+             height: 400px;
+             font-size: 23px;
+         }
+         #shop {
+             padding: 100px;
+         }
+         #visit {
+             height: 50px;
+             font-size: 25px;
+             width: 30%;
+             display: block;
+             float: left;
+         }
+         #img.b {
+             position: relative;
+             display: block;
+             padding: 10px;
+             float: left;
+         }
+         #link {
+             top: 56px;
+             right: 18px;
+             display: block;
+             float: left;
+             position: relative;
+             font-size: 25px;
+             margin: 0 auto;
+         }
+         #sec {
+             position: relative;
+             height: 120px;
+         }
+         #footer {
+             display: inline-block;
+             position: absolute;
+             width: 96%;
+             vertical-align: middle;
+             text-align: center;
+             padding: 20px;
+             background-color: rgba(002, 086, 105, 0.7);
+             margin: 0 auto;
+             bottom: 0;
+         }
+         #footer-left {
+             width: 33%;
+             display: inline-block;
+             font-size: 20px;
+             text-align: center;
+         }
+         #footer-center {
+             width: 33%;
+             float: left;
+             display: block;
+             text-align: center;
+             margin-top: 10px;
+         }
+         #footer-right {
+             width: 33%;
+             display: block;
+             float: left;
+             text-align: center;
+             margin-top: 10px;
+         }
