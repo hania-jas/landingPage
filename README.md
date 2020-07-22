@@ -1,4 +1,4 @@
-Landing Page
+# Landing Page
 This is my project of landing page website.
 
 ## General info
