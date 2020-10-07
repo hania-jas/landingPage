@@ -1,166 +1,278 @@
-         @import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
-     body {
-         background-image: url(https://digilove.pl/wp-content/uploads/2019/04/szare-deski-tlo-do-robienia-zdjec-paznokci.jpg);
-         background-size: 100% 100%;
-         font-family: 'Amatic SC';
-         font-weight: 800;
-         height: 100%;
-     }
-     
-     #header {
-         position: fixed;
-         align-items: center;
-         width: 98%;
-         height: 80px;
-         background-color: darkgrey;
-         border: 5px solid darkgrey;
-         border-radius: 12px;
-         font-size: 23px;
-         z-index: 1;
-     }
-     
-     #header-img {
-         width: 100px;
-         height: 80px;
-         border-radius: 12%;
-     }
-     
-     .logo {
-         position: absolute;
-         display: inline-flex;
-         margin: 50px 0 20px 0;
-         font-size: 23px;
-     }
-     
-     #nav-bar {
-         float: right;
-         font-size: 23px;
-     }
-     
-     .one {
-         display: inline;
-         float: left;
-     }
-     
-     .nav-link {
-         display: block;
-         padding: 8px;
-     }
-     
-     .first {
-         float: right;
-     }
-     
-     a {
-         text-decoration: none;
-         color: darkblue;
-     }
-     
-     @media (min-width: 300px) {
-         #vid {
-             display: block;
-             padding: 50px;
-             position: relative;
-             width: 90%;
-             height: 360px;
-             font-size: 23px;
-         }
-         #video {
-             border: 15px solid darkgrey;
-         }
-         #newsletter {
-             display: block;
-             position: relative;
-             top: 150px;
-             padding: 60px;
-             font-size: 23px;
-             border: 2px dashed black;
-             width: 60%;
-             background-color: rgba(002, 086, 105, 0.5);
-         }
-         #email {
-             padding: 10px;
-             width: 50%;
-             border: 1px dashed black;
-             border-radius: 9px;
-             background-color: blanchedalmond;
-         }
-         #submit {
-             padding: 10px;
-             width: 20%;
-             border: 1px dashed black;
-             border-radius: 9px;
-             background-color: blanchedalmond;
-         }
-         .tip {
-             font-size: 15px;
-         }
-         #genres {
-             position: relative;
-             display: block;
-             top: 200px;
-             padding: 60px;
-             width: 90%;
-             height: 400px;
-             font-size: 23px;
-         }
-         #shop {
-             padding: 100px;
-         }
-         #visit {
-             height: 50px;
-             font-size: 25px;
-             width: 30%;
-             display: block;
-             float: left;
-         }
-         #img.b {
-             position: relative;
-             display: block;
-             padding: 10px;
-             float: left;
-         }
-         #link {
-             top: 56px;
-             right: 18px;
-             display: block;
-             float: left;
-             position: relative;
-             font-size: 25px;
-             margin: 0 auto;
-         }
-         #sec {
-             position: relative;
-             height: 120px;
-         }
-         #footer {
-             display: inline-block;
-             position: absolute;
-             width: 96%;
-             vertical-align: middle;
-             text-align: center;
-             padding: 20px;
-             background-color: rgba(002, 086, 105, 0.7);
-             margin: 0 auto;
-             bottom: 0;
-         }
-         #footer-left {
-             width: 33%;
-             display: inline-block;
-             font-size: 20px;
-             text-align: center;
-         }
-         #footer-center {
-             width: 33%;
-             float: left;
-             display: block;
-             text-align: center;
-             margin-top: 10px;
-         }
-         #footer-right {
-             width: 33%;
-             display: block;
-             float: left;
-             text-align: center;
-             margin-top: 10px;
-         }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@font-face {
+    font-family: 'Macabro Outline Rough';
+    src: url('fonts/macabroFont/MACABROOUTLINEROUGH.ttf');
+}
+
+@font-face {
+    font-family: 'P22 Underground';
+    src: url('fonts/P22Underground-BkP.otf');
+}
+
+body {
+    background-size: 100% 100%;
+    font-family: 'P22 Underground';
+    font-weight: 800;
+    height: 100%;
+    margin: 0;
+    background-color: #f3faf6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.flexTopContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.rightCornerButtons {
+    float: right;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.logoImg {
+    width: 45%;
+}
+
+.websiteTitle {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Macabro Outline Rough';
+    font-size: 30px;
+}
+
+#header-img {
+    width: 100px;
+    height: 80px;
+    border-radius: 12%;
+}
+
+.rightCornerButtons {
+    width: 45%;
+}
+
+.loginButton {
+    width: 130px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #7bb696;
+    color: #ffffff;
+    border: 1px solid #dcf0e3;
+    box-shadow: 3px 3px 0px 0px #c2ded2;
+    margin-right: 8px;
+    cursor: pointer;
+    font-family: 'P22 Underground';
+}
+
+.shoppingButton {
+    width: 130px;
+    padding: 10px;
+    background-color: #102a2b;
+    color: #ffffff;
+    border: 1px solid #e4e9e9;
+    box-shadow: 3px 3px 0px 0px #c7e0d6;
+    cursor: pointer;
+    font-family: 'P22 Underground';
+}
+
+.navMenuDiv {
+    width: 100%;
+    margin-top: 0;
+}
+
+#nav-bar {
+    font-size: 16px;
+}
+
+.menuItem {
+    display: inline;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 8px;
+}
+
+.menu {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-top: 2px solid #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f3faf6;
+    height: 600px;
+}
+
+.introRightSide {
+    flex: 60%;
+    flex-wrap: wrap;
+}
+
+.introLeftSide {
+    flex: 40%;
+}
+
+.shopImage {
+    height: 600px;
+}
+
+.shopImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newsletter {
+    position: relative;
+    left: 20px;
+    padding: 10px;
+    font-size: 23px;
+    border: 1.5px solid #2b3936;
+    width: 60%;
+    height: 180px;
+    margin: 40px;
+    background-color: #e6f5eb;
+    box-shadow: 10px 12px 0px -1px #c7e4d7;
+}
+
+.sales,
+.discount {
+    margin: 5px;
+}
+
+#email {
+    padding: 10px;
+    width: fit-content;
+    margin-top: 8px;
+    border: 1.5px solid #2b3936;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 0px -1px #c7e4d7;
+}
+
+#submit {
+    position: relative;
+    bottom: 19px;
+    padding: 8px;
+    border: 1.5px solid #2b3936;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 0px -1px #c7e4d7;
+    cursor: pointer;
+}
+
+.advantagesSection {
+    width: 90%;
+    height: 600px;
+    background-color: #cae1d6;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.advantagesSection p {
+    margin-top: 35px;
+}
+
+.delivery,
+.bestsellers,
+.covid {
+    flex-direction: column;
+    width: 23%;
+    background-color: #ffffff;
+    height: 400px;
+    border: 1px solid #2c3b35;
+    box-shadow: 6px 6px 0px 0px #102a2b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delivery,
+.bestsellers {
+    margin-right: 30px;
+}
+
+.readMoreButton {
+    width: 130px;
+    padding: 8px;
+    border: 1px solid #647570;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 0px -1px #c9dfda;
+    margin-bottom: 25px;
+}
+
+.bestsellersSection {
+    width: 90%;
+    height: 600px;
+    background-color: #102a2b;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin: auto;
+}
+
+.book {
+    margin: auto;
+    height: 380px;
+}
+
+.book img {
+    height: 100%;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    text-align: center;
+    background-color: #e6f5eb;
+    height: 100px;
+    margin: auto;
+    margin-top: 10px;
+    bottom: 0;
+}
+
+#footer-left,
+#footer-center,
+#footer-right {
+    display: flex;
+    align-self: center;
+}
+
+.footerContact,
+.footerMail {
+    padding: 12px;
+    width: 260px;
+    background-color: #f3faf6;
+    padding: 20px;
+}
+
+.footerMail {
+    box-shadow: -8px 9px 0px -1px #c7e4d7;
+}
+
+.footerContact {
+    box-shadow: 8px -8px 0px 1px #7bb696;
+}

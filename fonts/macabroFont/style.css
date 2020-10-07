@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Macabro';
+    src: local('Macabro OUTLINE ROUGH'), local('Macabro-OUTLINE-ROUGH'),
+        url('MACABROOUTLINEROUGH.woff2') format('woff2'),
+        url('MACABROOUTLINEROUGH.woff') format('woff'),
+        url('MACABROOUTLINEROUGH.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
