@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/flaticon.css">
 </head>
 
 <body>
@@ -12,19 +13,20 @@
                 <div class="flexTopContainer">
 
                     <div class="logoImg">
+                        <button class="shoppingButton">Shop Online</button>
                     </div>
                     <div class="websiteTitle">BOOKSHOP</div>
                     <div class="rightCornerButtons">
                         <button class="loginButton">Log In</button>
-                        <button class="shoppingButton">Shop online</button>
+                        <button class="signInButton ">Sign In</button>
                     </div>
 
                 </div>
                 <div class="navMenuDiv">
                     <nav id="nav-bar">
                         <ul class="menu">
-                            <li class="menuItem"><a class="nav-link" href="#genres">Genres</a></li>
-                            <li class="menuItem"><a class="nav-link" href="#shop">Shop Online</a></li>
+                            <li class="menuItem"><a class="nav-link" href="#advantages">Advantages</a></li>
+                            <li class="menuItem"><a class="nav-link" href="#bestsellers">Bestsellers</a></li>
                             <li class="menuItem"><a class="nav-link" href="#footer-left">Contact</a></li>
                         </ul>
                     </nav>
@@ -36,7 +38,7 @@
                 <div class="newsletter">
                     <p class="sales">Sales up to 50% </p>
                     <p class="discount"> Code: AUTUMN2020</p>
-                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <form id="form">
                         <input id="email" name="email" type="email" placeholder="Enter your email adress">
                         <br><br>
                         <input id="submit" type="submit" name="submit" value="Get the newsletter">
@@ -49,74 +51,81 @@
                 </div>
             </div>
         </div>
-        <div class="advantagesSection">
-            <div class="delivery">
+        <div id="advantages" class="advantagesSection">
+            <div class="delivery lightBackground">
                 <p>Fast and free delivery</p>
-                <button class="readMoreButton">Read More</button>
-            </div>
-            <div class="bestsellers">
-                <p>The newest bestsellers</p>
-                <button class="readMoreButton">Read More</button>
-            </div>
-            <div class="covid">
-                <p>Covid protection</p>
-                <button class="readMoreButton">Read More</button>
-            </div>
-        </div>
 
-        <div class="bestsellersSection">
+                <div class="advantagesImg">
+                    <div class="lightGreenBackground">
+                        <i class="flaticon-delivery-truck advantagesIcon"></i>
+                    </div>
+                </div>
+                <button class="readMoreButton">Read More</button>
+            </div>
+            <div class="bestsellers lightBackground">
+                <p>The newest bestsellers</p>
+
+                <div class="advantagesImg">
+                    <div class="lightGreenBackground">
+                        <i class="flaticon-book-1 advantagesIcon"></i>
+                    </div>
+                </div>
+                <button class="readMoreButton">Read More</button>
+            </div>
+            <div class="covid lightBackground">
+                <p>Covid protection</p>
+                <div class="advantagesImg">
+                    <div class="lightGreenBackground">
+                        <i class="flaticon-desinfectant advantagesIcon"></i>
+                    </div>
+                </div>
+                <button class="readMoreButton">Read More</button>
+            </div>
+
+        </div>
+        <div class="viewMore"><button class="viewMoreButton">View more</button></div>
+        <div id="bestsellers" class="bestsellersSection">
+
             <div class="firstBook book">
-                <img src="images/book1.jpg">
+                <img class="firstImg" src="images/book1.jpg">
             </div>
             <div class="secondBook book">
-                <img src="images/book2.jpg">
+                <img class="secondImg" src="images/book2.jpg">
             </div>
             <div class="thirdBook book">
-                <img src="images/book3.jpg">
+                <img class="thirdImg" src="images/book3.jpg">
             </div>
             <div class="fourthBook book">
-                <img src="images/book4.jpg">
+                <img class="fourthImg" src="images/book4.jpg">
             </div>
-            <div class="fifthBook book">
-                <img src="images/book5.jpg">
+        </div>
+        <div class="rightAndLeftArrows">
+            <div class="leftArrow">
+                <i class="flaticon-left-arrow"></i>
             </div>
-            <div class="sixthBook book">
-                <img src="images/book6.jpg">
-            </div>
-            <div class="seventhBook book">
-                <img src="images/book7.jpg">
-            </div>
-            <div class="eighthBook book">
-                <img src="images/book8.jpg">
-            </div>
-            <div class="ningthBook book">
-                <img src="images/book9.jpg"></div>
-            <div class="tenthBook book">
-                <img src="images/book10.jpg">
-            </div>
-            <div class="eleventhBook book">
-                <img src="images/book11.jpg">
+            <div class="rightArrow">
+                <i class="flaticon-right-arrow"></i>
             </div>
         </div>
         <footer id="footer">
             <div id="footer-left">
-                <p class="footerMail"><a href="#">bookshop@243.gmail.com</a></p>
+                <i class="flaticon-send-mail"></i>
+                <p class="footerMail">
+                    <a href="#">bookshop@243.gmail.com</a>
+                </p>
             </div>
             <div id="footer-center">
                 <p class="footerRights">All rights reserved</p>
             </div>
             <div id="footer-right">
+                <i class="flaticon-dial-phone"></i>
                 <p class="footerContact">+48 791 240 488</p>
                 </p>
             </div>
         </footer>
 
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
-
-
-
-
-
 
 </html>
