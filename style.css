@@ -14,417 +14,684 @@
     src: url('fonts/denver_font/Denver-Serial-Regular.ttf');
 }
 
-@media (min-width: 600px) {
-    .loginButton,
+@media (max-width: 600px) {
+    body {
+        font-family: 'P22 Underground';
+        font-weight: 800;
+        margin: 0;
+        background-color: #f3faf6;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    header {
+        background-color: #ffffff;
+    }
+    .flexTopContainer {
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+    }
+    .logoImg {
+        width: 200px;
+        order: 1;
+    }
+    .shoppingButton {
+        width: 100px;
+        padding: 6px;
+        padding-bottom: 7px;
+        margin-top: 5px;
+        border: 1px solid #647570;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 0px -1px #c9dfda;
+        box-shadow: 3px 3px 0px 0px #c2ded2;
+        margin-left: 8px;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+    }
+    .websiteTitle {
+        position: absolute;
+        top: 70px;
+        order: 3;
+        align-self: center;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Macabro Outline Rough';
+        font-size: 27px;
+    }
+    .rightCornerButtons {
+        width: 100px;
+        position: absolute;
+        right: 3%;
+        order: 2;
+    }
+    .loginButton {
+        width: 100px;
+        padding: 6px;
+        margin-top: 5px;
+        background-color: #7bb696;
+        color: #ffffff;
+        border: 1px solid #dcf0e3;
+        box-shadow: 3px 3px 0px 0px #c2ded2;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+    }
     .signInButton {
-        width: 50px;
+        width: 100px;
+        padding: 6px;
+        background-color: #102a2b;
+        color: #ffffff;
+        border: 1px solid #e4e9e9;
+        box-shadow: 3px 3px 0px 0px #c7e0d6;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+        margin-top: 5px;
+    }
+    .navMenuDiv {
+        width: 100%;
+        margin-top: 0;
+    }
+    #nav-bar {
+        font-size: 16px;
+    }
+    .menuItem {
+        display: inline;
+    }
+    .nav-link {
+        display: inline-block;
+        padding: 8px;
+    }
+    .menu {
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        border-top: 2px solid #f4f4f4;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .menuItem:hover {
+        border-bottom: 1px solid black;
+    }
+    .shopImage {
+        height: auto;
+        display: flex;
+        order: 1;
+    }
+    .shopImage img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+    .introLeftSide {
+        order: 2;
+        align-self: center;
+        width: 100%;
+    }
+    .newsletter {
+        font-size: 20px;
+        border: 1.5px solid #2b3936;
+        height: 180px;
+        margin: 40px;
+        background-color: #e6f5eb;
+        box-shadow: 10px 12px 0px -1px #c7e4d7;
+        font-family: 'Denver-Serial';
+    }
+    .sales,
+    .discount {
+        margin: 5px;
+        text-align: center;
+    }
+    .discount {
+        padding-bottom: 10px;
+    }
+    #email {
+        padding: 10px;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        border: 1.5px solid #2b3936;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 0px -1px #c7e4d7;
+        font-family: 'Denver-Serial';
+    }
+    #submit {
+        position: relative;
+        bottom: 30px;
+        left: 33%;
+        padding: 8px;
+        border: 1.5px solid #2b3936;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 0px -1px #c7e4d7;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+    }
+    .advantagesSection {
+        width: 100%;
+        background-color: #cae1d6;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .advantagesSection p {
+        text-align: center;
+    }
+    .lightGreenBackground {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #f3faf6;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+    }
+    .changeColors {
+        transition: 1s;
+        color: #c9dfda;
+        background-color: #102a2b !important;
+    }
+    .changeColors .lightGreenBackground {
+        transition: 1s;
+        background-color: #102a2b;
+    }
+    .changeColors .readMoreButton {
+        transition: 1s;
+        background-color: #c9dfda;
+        box-shadow: 4px 4px 0px -1px #647570;
+    }
+    .delivery,
+    .bestsellers,
+    .covid {
+        flex-direction: column;
+        height: 230px;
+        width: 30%;
+        background-color: #ffffff;
+        box-shadow: 6px 6px 8px -1px #102a2b;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Denver-Serial';
+        font-size: 15px;
+    }
+    .delivery,
+    .bestsellers {
+        margin-right: 17px;
+    }
+    .advantagesImg {
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .advantagesIcon {
+        font-size: 70px;
+    }
+    .flaticon-desinfectant {
+        padding-left: 15px;
+        text-align: center;
+    }
+    .readMoreButton {
+        width: 100px;
+        padding: 8px;
+        border: 1px solid #647570;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 0px -1px #c9dfda;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+    }
+    .bestsellersSection {
+        width: 100%;
+        background-color: #102a2b;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        margin: auto;
+        align-content: center;
+    }
+    .book {
+        margin: auto;
+    }
+    .book img {
+        height: 160px;
+        object-fit: cover;
+        margin: 10px;
+        max-width: 80%;
+        cursor: pointer;
+        border: 2px solid black;
+        box-shadow: 6px 6px 0px 0px #1e3f2e;
+    }
+    .rightAndLeftArrows {
+        position: relative;
+        bottom: 50px;
+        height: 0;
+    }
+    .leftArrow {
+        margin-left: 100px;
+        display: inline-block;
+    }
+    .flaticon-left-arrow,
+    .flaticon-right-arrow {
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .rightArrow {
+        margin-right: 100px;
         float: right;
     }
-    .intro,
-    .shopImage,
-    .advantagesSection,
-    .bestsellersSection {
-        height: auto;
-        width: auto;
+    .viewMore {
+        position: relative;
+        left: 4%;
+        top: 10px;
+        width: 0;
+        height: 0;
+    }
+    .viewMoreButton {
+        width: 100px;
+        padding: 5px;
+        border: 1px solid #647570;
+        background-color: #99c1a9;
+        box-shadow: 4px 4px 0px -1px #647570;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+    }
+    #footer {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #e6f5eb;
+        height: 100px;
+        margin: 0;
+        font-family: 'Denver-Serial';
+    }
+    #footer-left,
+    #footer-center,
+    #footer-right {
+        display: flex;
+    }
+    .flaticon-send-mail {
+        font-size: 40px;
+        margin-right: 8px;
+        position: relative;
+        left: 2%;
+    }
+    .footerMail {
+        line-height: 20px;
+    }
+    .footerMail a {
+        margin-left: 8px;
+    }
+    .flaticon-dial-phone {
+        position: relative;
+        font-size: 40px;
+        left: 2%;
+    }
+    .footerContact {
+        line-height: 20px;
+        margin-left: 15px;
+    }
+    #footer-center {
+        display: none;
     }
 }
 
-body {
-    background-size: 100% 100%;
-    font-family: 'P22 Underground';
-    font-weight: 800;
-    height: 100%;
-    margin: 0;
-    background-color: #f3faf6;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.flexTopContainer {
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-}
-
-.rightCornerButtons {
-    float: right;
-}
-
-header {
-    background-color: #ffffff;
-}
-
-.logoImg {
-    width: 55%;
-}
-
-.shoppingButton {
-    width: 130px;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #647570;
-    background-color: #ffffff;
-    box-shadow: 4px 4px 0px -1px #c9dfda;
-    box-shadow: 3px 3px 0px 0px #c2ded2;
-    margin-left: 8px;
-    cursor: pointer;
-    font-family: 'P22 Underground';
-}
-
-.websiteTitle {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    font-family: 'Macabro Outline Rough';
-    font-size: 30px;
-}
-
-.rightCornerButtons {
-    width: 55%;
-}
-
-.loginButton {
-    width: 130px;
-    padding: 10px;
-    margin-top: 5px;
-    background-color: #7bb696;
-    color: #ffffff;
-    border: 1px solid #dcf0e3;
-    box-shadow: 3px 3px 0px 0px #c2ded2;
-    margin-right: 8px;
-    cursor: pointer;
-    font-family: 'P22 Underground';
-    float: right;
-}
-
-.signInButton {
-    width: 130px;
-    padding: 10px;
-    background-color: #102a2b;
-    color: #ffffff;
-    border: 1px solid #e4e9e9;
-    box-shadow: 3px 3px 0px 0px #c7e0d6;
-    cursor: pointer;
-    margin-right: 8px;
-    font-family: 'P22 Underground';
-    float: right;
-    margin-top: 5px;
-}
-
-.navMenuDiv {
-    width: 100%;
-    margin-top: 0;
-}
-
-#nav-bar {
-    font-size: 16px;
-}
-
-.menuItem {
-    display: inline;
-}
-
-.nav-link {
-    display: inline-block;
-    padding: 8px;
-}
-
-.menu {
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-    border-top: 2px solid #f4f4f4;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.menuItem:hover {
-    border-bottom: 1px solid black;
-}
-
-.intro {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #f3faf6;
-    height: 600px;
-}
-
-.introRightSide {
-    flex: 60%;
-    flex-wrap: wrap;
-}
-
-.introLeftSide {
-    flex: 40%;
-}
-
-.shopImage {
-    height: 600px;
-    display: flex;
-}
-
-.shopImage img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.newsletter {
-    position: relative;
-    left: 20px;
-    padding: 10px;
-    font-size: 23px;
-    border: 1.5px solid #2b3936;
-    width: 60%;
-    height: 180px;
-    margin: 40px;
-    background-color: #e6f5eb;
-    box-shadow: 10px 12px 0px -1px #c7e4d7;
-    font-family: 'Denver-Serial';
-}
-
-.sales,
-.discount {
-    margin: 5px;
-}
-
-#email {
-    padding: 10px;
-    width: 90%;
-    margin-top: 8px;
-    border: 1.5px solid #2b3936;
-    background-color: #ffffff;
-    box-shadow: 4px 4px 0px -1px #c7e4d7;
-    font-family: 'Denver-Serial';
-}
-
-#submit {
-    position: relative;
-    bottom: 19px;
-    padding: 8px;
-    border: 1.5px solid #2b3936;
-    background-color: #ffffff;
-    box-shadow: 4px 4px 0px -1px #c7e4d7;
-    cursor: pointer;
-    font-family: 'P22 Underground';
-}
-
-.advantagesSection {
-    width: 90%;
-    height: 600px;
-    background-color: #cae1d6;
-    justify-content: center;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.changeColors {
-    transition: 1s;
-    color: #c9dfda;
-    background-color: #102a2b !important;
-}
-
-.changeColors .lightGreenBackground {
-    transition: 1s;
-    background-color: #102a2b;
-}
-
-.changeColors .readMoreButton {
-    transition: 1s;
-    background-color: #c9dfda;
-    box-shadow: 4px 4px 0px -1px #647570;
-}
-
-.advantagesSection p {
-    margin-top: 45px;
-}
-
-.delivery,
-.bestsellers,
-.covid {
-    flex-direction: column;
-    width: 23%;
-    background-color: #ffffff;
-    height: 400px;
-    box-shadow: 6px 6px 8px -1px #102a2b;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Denver-Serial';
-    font-size: 23px;
-}
-
-.delivery,
-.bestsellers {
-    margin-right: 30px;
-}
-
-.readMoreButton {
-    width: 130px;
-    padding: 8px;
-    border: 1px solid #647570;
-    background-color: #ffffff;
-    box-shadow: 4px 4px 0px -1px #c9dfda;
-    margin-bottom: 25px;
-    cursor: pointer;
-    font-family: 'P22 Underground';
-}
-
-.viewMore {
-    position: relative;
-    left: 80%;
-    top: 45px;
-    width: 0;
-    height: 0;
-}
-
-.viewMoreButton {
-    width: 130px;
-    padding: 8px;
-    border: 1px solid #647570;
-    background-color: #99c1a9;
-    box-shadow: 4px 4px 0px -1px #647570;
-    cursor: pointer;
-    font-family: 'P22 Underground';
-}
-
-.bestsellersSection {
-    width: 90%;
-    height: 600px;
-    background-color: #102a2b;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    margin: auto;
-    align-content: center;
-}
-
-.rightAndLeftArrows {
-    position: relative;
-    bottom: 110px;
-}
-
-.leftArrow {
-    margin-left: 100px;
-    display: inline-block;
-}
-
-.flaticon-left-arrow,
-.flaticon-right-arrow {
-    font-size: 70px;
-    cursor: pointer;
-}
-
-.rightArrow {
-    margin-right: 100px;
-    float: right;
-}
-
-.lightGreenBackground {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #f3faf6;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
-}
-
-.advantagesImg {
-    height: auto;
-    margin-bottom: 25px;
-}
-
-.advantagesIcon {
-    font-size: 70px;
-}
-
-.flaticon-desinfectant {
-    padding-left: 15px;
-    text-align: center;
-}
-
-.book {
-    margin: auto;
-}
-
-.book img {
-    max-height: 320px;
-    object-fit: contain;
-    margin: 10px;
-    max-width: 215px;
-    cursor: pointer;
-    border: 2px solid black;
-    box-shadow: 6px 6px 0px 0px #1e3f2e;
-}
-
-#footer {
-    display: flex;
-    justify-content: space-between;
-    width: 98%;
-    text-align: center;
-    background-color: #e6f5eb;
-    height: 100px;
-    margin: auto;
-    margin-top: 10px;
-    bottom: 0;
-    font-family: 'Denver-Serial';
-}
-
-#footer-left,
-#footer-center,
-#footer-right {
-    display: flex;
-    align-self: center;
-}
-
-.footerContact,
-.footerMail {
-    padding: 12px;
-    width: 260px;
-    height: 30px;
-}
-
-.flaticon-send-mail {
-    font-size: 40px;
-    margin-right: 8px;
-    position: relative;
-    left: 65px;
-    top: 10px;
-}
-
-.footerMail {
-    box-shadow: -8px 9px 0px -1px #c7e4d7;
-    line-height: 20px;
-}
-
-.footerMail a {
-    margin-left: 20px;
-}
-
-.flaticon-dial-phone {
-    position: relative;
-    font-size: 40px;
-    left: 160px;
-    top: 22px;
-}
-
-.footerContact {
-    line-height: 20px;
-    text-align: end;
-    padding-right: 20px;
-    margin-right: 55px;
-    padding-top: 22px;
-    box-shadow: 8px -8px 0px 1px #7bb696;
+@media (min-width: 600px) {
+    body {
+        font-family: 'P22 Underground';
+        font-weight: 800;
+        margin: 0;
+        background-color: #f3faf6;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .flexTopContainer {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+    }
+    .rightCornerButtons {
+        float: right;
+    }
+    header {
+        background-color: #ffffff;
+    }
+    .logoImg {
+        width: 55%;
+    }
+    .shoppingButton {
+        width: 130px;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #647570;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 0px -1px #c9dfda;
+        box-shadow: 3px 3px 0px 0px #c2ded2;
+        margin-left: 8px;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+    }
+    .websiteTitle {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Macabro Outline Rough';
+        font-size: 30px;
+    }
+    .rightCornerButtons {
+        width: 55%;
+    }
+    .loginButton {
+        width: 130px;
+        padding: 10px;
+        margin-top: 5px;
+        background-color: #7bb696;
+        color: #ffffff;
+        border: 1px solid #dcf0e3;
+        box-shadow: 3px 3px 0px 0px #c2ded2;
+        margin-right: 8px;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+        float: right;
+    }
+    .signInButton {
+        width: 130px;
+        padding: 10px;
+        background-color: #102a2b;
+        color: #ffffff;
+        border: 1px solid #e4e9e9;
+        box-shadow: 3px 3px 0px 0px #c7e0d6;
+        cursor: pointer;
+        margin-right: 8px;
+        font-family: 'P22 Underground';
+        float: right;
+        margin-top: 5px;
+    }
+    .navMenuDiv {
+        width: 100%;
+        margin-top: 0;
+    }
+    #nav-bar {
+        font-size: 16px;
+    }
+    .menuItem {
+        display: inline;
+    }
+    .nav-link {
+        display: inline-block;
+        padding: 8px;
+    }
+    .menu {
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        border-top: 2px solid #f4f4f4;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .menuItem:hover {
+        border-bottom: 1px solid black;
+    }
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f3faf6;
+        height: 600px;
+    }
+    .introRightSide {
+        flex: 60%;
+        flex-wrap: wrap;
+    }
+    .introLeftSide {
+        flex: 40%;
+    }
+    .shopImage {
+        height: 600px;
+        display: flex;
+    }
+    .shopImage img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .newsletter {
+        position: relative;
+        left: 20px;
+        padding: 10px;
+        font-size: 20px;
+        border: 1.5px solid #2b3936;
+        width: 60%;
+        height: 180px;
+        margin: 40px;
+        background-color: #e6f5eb;
+        box-shadow: 10px 12px 0px -1px #c7e4d7;
+        font-family: 'Denver-Serial';
+    }
+    .sales,
+    .discount {
+        margin: 5px;
+    }
+    #email {
+        padding: 10px;
+        width: 90%;
+        margin-top: 8px;
+        border: 1.5px solid #2b3936;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 0px -1px #c7e4d7;
+        font-family: 'Denver-Serial';
+    }
+    #submit {
+        position: relative;
+        bottom: 19px;
+        padding: 8px;
+        border: 1.5px solid #2b3936;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 0px -1px #c7e4d7;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+    }
+    .advantagesSection {
+        width: 90%;
+        height: 600px;
+        background-color: #cae1d6;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .changeColors {
+        transition: 1s;
+        color: #c9dfda;
+        background-color: #102a2b !important;
+    }
+    .changeColors .lightGreenBackground {
+        transition: 1s;
+        background-color: #102a2b;
+    }
+    .changeColors .readMoreButton {
+        transition: 1s;
+        background-color: #c9dfda;
+        box-shadow: 4px 4px 0px -1px #647570;
+    }
+    .advantagesSection p {
+        margin-top: 45px;
+        text-align: center;
+    }
+    .delivery,
+    .bestsellers,
+    .covid {
+        flex-direction: column;
+        width: 23%;
+        background-color: #ffffff;
+        height: 400px;
+        box-shadow: 6px 6px 8px -1px #102a2b;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Denver-Serial';
+        font-size: 23px;
+    }
+    .delivery,
+    .bestsellers {
+        margin-right: 30px;
+    }
+    .readMoreButton {
+        width: 130px;
+        padding: 8px;
+        border: 1px solid #647570;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 0px -1px #c9dfda;
+        margin-bottom: 25px;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+    }
+    .viewMore {
+        position: relative;
+        left: 8%;
+        top: 10px;
+        width: 0;
+        height: 0;
+    }
+    .viewMoreButton {
+        width: 130px;
+        padding: 8px;
+        border: 1px solid #647570;
+        background-color: #99c1a9;
+        box-shadow: 4px 4px 0px -1px #647570;
+        cursor: pointer;
+        font-family: 'P22 Underground';
+    }
+    .bestsellersSection {
+        width: 90%;
+        height: 600px;
+        background-color: #102a2b;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        margin: auto;
+        align-content: center;
+    }
+    .rightAndLeftArrows {
+        position: relative;
+        bottom: 110px;
+        height: 0;
+    }
+    .leftArrow {
+        margin-left: 100px;
+        display: inline-block;
+    }
+    .flaticon-left-arrow,
+    .flaticon-right-arrow {
+        font-size: 70px;
+        cursor: pointer;
+    }
+    .rightArrow {
+        margin-right: 100px;
+        float: right;
+    }
+    .lightGreenBackground {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #f3faf6;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+    }
+    .advantagesImg {
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .advantagesIcon {
+        font-size: 70px;
+    }
+    .flaticon-desinfectant {
+        padding-left: 15px;
+        text-align: center;
+    }
+    .book {
+        margin: auto;
+    }
+    .book img {
+        height: 320px;
+        object-fit: cover;
+        margin: 10px;
+        max-width: 215px;
+        cursor: pointer;
+        border: 2px solid black;
+        box-shadow: 6px 6px 0px 0px #1e3f2e;
+    }
+    #footer {
+        display: flex;
+        justify-content: space-between;
+        width: 98%;
+        text-align: center;
+        background-color: #e6f5eb;
+        height: 100px;
+        margin: auto;
+        margin-top: 20px;
+        font-family: 'Denver-Serial';
+    }
+    #footer-left,
+    #footer-center,
+    #footer-right {
+        display: flex;
+        align-self: center;
+    }
+    .footerContact,
+    .footerMail {
+        padding: 12px;
+        width: 260px;
+        height: 30px;
+    }
+    .flaticon-send-mail {
+        font-size: 40px;
+        margin-right: 8px;
+        position: relative;
+        left: 65px;
+        top: 10px;
+    }
+    .footerMail {
+        box-shadow: -8px 9px 0px -1px #c7e4d7;
+        line-height: 20px;
+    }
+    .footerMail a {
+        margin-left: 10px;
+    }
+    .flaticon-dial-phone {
+        position: relative;
+        font-size: 40px;
+        left: 160px;
+        top: 22px;
+    }
+    .footerContact {
+        line-height: 20px;
+        text-align: end;
+        padding-right: 20px;
+        margin-right: 55px;
+        padding-top: 22px;
+        box-shadow: 8px -8px 0px 1px #7bb696;
+    }
 }
