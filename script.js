@@ -1,5 +1,3 @@
-const advantageSectionImages = document.querySelectorAll('.lightBackground');
-const circleBackgrounds = document.querySelectorAll('.lightGreenBackground');
 const leftArrow = document.querySelector('.flaticon-left-arrow');
 const rightArrow = document.querySelector('.flaticon-right-arrow');
 
@@ -9,20 +7,6 @@ const thirdDiv = document.querySelector('.thirdBook')
 const fourthDiv = document.querySelector('.fourthBook')
 
 const bestsellersSection = document.querySelector('.bestsellersSection');
-
-advantageSectionImages.forEach(image => {
-    image.addEventListener('mouseover', () => {
-        image.classList.add('changeColors');
-        console.log(image);
-    })
-})
-
-advantageSectionImages.forEach(image => {
-    image.addEventListener('mouseout', () => {
-        image.classList.remove('changeColors');
-        console.log(image);
-    })
-})
 
 const arrayOfBooks = ['images/book1.jpg', 'images/book2.jpg', 'images/book3.jpg', 'images/book4.jpg', 'images/book5.jpg', 'images/book6.jpg', 'images/book7.jpg', 'images/book8.jpg', 'images/book9.jpg', 'images/book10.jpg', 'images/book11.jpg'];
 const clearDivs = () => {
@@ -72,7 +56,6 @@ const displayPreviousBook = () => {
 
     arrayOfBooks.unshift(arrayOfBooks[arrayOfBooks.length - 1]);
     arrayOfBooks.pop();
-    console.log(arrayOfBooks[arrayOfBooks.length - 1]);
 }
 rightArrow.addEventListener('click', displayNextBook);
 leftArrow.addEventListener('click', displayPreviousBook);
